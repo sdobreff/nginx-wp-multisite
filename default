@@ -72,8 +72,8 @@ server {
  
 
 	location / {
-		include /etc/nginx/naxsi.rules;
-		include /etc/nginx/naxsi.wordpress.rules;
+	#	include /etc/nginx/naxsi.rules;
+	#	include /etc/nginx/naxsi.wordpress.rules;
 		if (!-e $request_filename) {
 			rewrite ^.*$ /index.php last;
 		}
